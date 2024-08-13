@@ -1,0 +1,137 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+      <head>
+        <title>Alan Turing Bio</title>
+        <style>
+          h1{
+            font-style: italic;
+            color:chocolate;
+            text-align: center;
+          }
+          h2{
+            font-style: italic;
+            text-decoration: underline;
+            text-align: center;
+            color:darkcyan;
+          }
+          body{
+            padding: 10px;
+          }
+          figcaption{
+            font-size: 10px;
+          }
+          nav{
+            text-align: center;
+          }
+          .center{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          .center1{
+            text-align: center;
+          }
+          figcaption{
+            text-align: center;
+          }          
+        </style>
+      </head>
+
+      <body>
+        <header>
+          <h1>Alan Turing Bio</h1>
+          <nav>
+            <a href="#overview">Overview</a>
+            <a href="#fact">Interesting Fact</a>
+            <a href="#quotes">Quotes</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+
+        <main>
+          <section id="overview">
+            <h2>Overview</h2>
+            <aside>
+              <figure>
+                <img style="max-width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/220px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg" alt="Alan Turing Photo" class="center">
+                <figcaption>Alan Turing 1936 at Princeton University</figcaption>
+              </figure>
+            </aside>
+            <p>Alan Mathison Turing (23 June 1912 - 7 June 1954) was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. Turing is widely considered to be the father of theoretical computer science.</p>
+          </section>
+
+          <section id="fact">
+            <h2>Interesting Fact and Associated Institutions</h2>
+            <p>When Turing returned to Cambridge, he attended lectures given in 1939 by Ludwig Wittgenstein about the foundations of mathematics. The lectures have been reconstructed verbatim, including interjections from Turing and other students, from students' notes. Turing and Wittgenstein argued and disagreed, with Turing defending formalism and Wittgenstein propounding his view that mathematics does not discover any absolute truths, but rather invents them.</p>
+            <ul>
+              <li>Sherborne</li>
+              <li>Cambridge</li>
+              <li>Government Code and Cypher School (GC&CS)</li>
+            </ul>
+          </section>
+
+          <section id="quotes">
+            <h2>Quotes</h2>
+            <ul>
+              <li>“Sometimes it is the people no one can imagine anything of who do the things no one can imagine.”</li>
+              <li>“We can only see a short distance ahead, but we can see plenty there that needs to be done.”</li>
+              <li>“Those who can imagine anything, can create the imliossible.”</li>
+              <li>“If a machine is expected to be infallible, it cannot also be intelligent.”</li>
+            </ul>
+          </section>
+
+          <section id="contact">
+            <h2>Contact the Webmaster</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <form action="" class="center1">
+              <label>Your email: 
+                <input type="email" placeholder="type email">
+              </label><br>
+              <label>Your message:
+                <input type="text" placeholder="type a message to the webmaster">
+              </label>
+            </form>
+          </section>
+        </main>
+
+        <footer>
+
+        </footer>
+      </body>
+
+    </html>
